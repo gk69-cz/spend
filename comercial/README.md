@@ -22,4 +22,8 @@ create flutter_native_splash.yaml - copy code from doc
 update nessary parameters.
 dart run flutter_native_splash:create
 
+## app logo 
+
+flutter_launcher_icons.yaml - copy code from doc update the asset name
+flutter pub run flutter_launcher_icons 
 
