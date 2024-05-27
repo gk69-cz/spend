@@ -1,3 +1,5 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:comercial/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,41 +18,15 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
-
-  @override
-  Widget build(BuildContext context) {
-   
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+      home:AnimatedSplashScreen(
+        splash: 'assets/netflix.gif',
+        splashIconSize: 2000.0,
+        centered: true,
+        nextScreen: Home(),
+        duration: 3100,
+        backgroundColor: Colors.black,
+        
       ),
-      body: Center(
-        child: Column(
-          children: <Widget>[
-            
-           
-          ],
-        ),
-      ),
-      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
