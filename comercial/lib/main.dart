@@ -1,4 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:comercial/auth/login.dart';
 import 'package:comercial/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         splash: 'assets/netflix.gif',
         splashIconSize: 2000.0,
         centered: true,
-        nextScreen: Home(),
+        nextScreen: Login(),
         duration: 3100,
         backgroundColor: Colors.black,
         
